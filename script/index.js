@@ -1,8 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const logo = document.getElementById('logo');
-    if (logo) {
-        logo.addEventListener('click', function() {
-            window.location.href = 'index.html';
-        });
-    }
+// Toggle mobile nav menu
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
